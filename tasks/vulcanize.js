@@ -50,6 +50,13 @@ module.exports = function(grunt) {
         }
       });
 
+      //if abspath was set, strip it from the src file path, lest it get applied twice
+      if (typeof options.abspath !== 'undefined' && options.abspath.length > 0) {
+        if (src[0].indexOf(options.abspath) === 0) {
+          src[0] = src[0].substr(options.abspath.length);
+        }
+      }
+
       // Handle options.
       options.output = f.dest;
 
