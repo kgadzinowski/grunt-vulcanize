@@ -7,7 +7,7 @@
     "test": "test"
   },
   "dependencies": {
-    "vulcanize": "^1.8.1",
+    "vulcanize": "jasongardnerlv/vulcanize",
     "node-fs": "~0.1.7"
   },
   "devDependencies": {
